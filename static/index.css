@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: #F59AEE;
+    height: 150px;
+    display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+header img {
+height: 125px;
+width: 100;
+margin: 10px;
+}
+
+
+
+header h1:not(:last-child)::before{
+content: "|";
+margin: 0px 20px 0px 20px;
+font-family: "Port Lligat Slab", serif;
+color: white;
+}
+
+header h1:not(:last-child)::after{
+content: "|";
+margin: 0px 20px 0px 20px;
+font-family: "Port Lligat Slab", serif;
+color: white;
+}
+
+nav {
+ background-image: url(../media/hero.jpg);
+height:800px ;
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+background-size: cover;
+}
+
+nav h1 {
+grid-column: 1/2;
+grid-row: 1/2;
+color: white;
+display: flex;
+flex-direction: column;
+text-align: center;
+grid-column: 1/2;
+grid-row: 1/2;
+font-size: 60px;
+margin: 10%;
+}
+
+span {
+color: #DE39F8;
+}
