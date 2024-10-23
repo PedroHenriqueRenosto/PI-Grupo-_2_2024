@@ -83,8 +83,6 @@ canvas {
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    color: black;
-    margin: 20px;
 }
 
 .container {
