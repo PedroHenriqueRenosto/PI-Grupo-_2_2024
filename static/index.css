@@ -1,3 +1,9 @@
+@font-face {
+    font-family: urban_heroes;
+    src: url(../fonts/Urban\ Heroes.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -66,8 +72,11 @@ nav h1 {
     margin: 10%;
 }
 
-span {
+#span_1 {
     color: #DE39F8;
+    font-family: urban_heroes;
+    text-shadow: #000 ;
+    
 }
 
 canvas {
@@ -75,6 +84,7 @@ canvas {
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     color: black;
+    margin: 20px;
 }
 
 .container {
