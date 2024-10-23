@@ -12,50 +12,53 @@ let isPainting = false;
 
 let ferramentaAtiva = "brush";
 
+
+const getMousePos = (event) => {
+    const rect = canvas.getBoundingClientRect();
+    return {
+        x: event.clientX - rect.left,
+        y: event.clientY - rect.top
+    };
+};
+
+
 inputCor.addEventListener("change", ({ target }) => {
     ctx.fillStyle = target.value;
 });
 
-canvas.addEventListener("mousedown", ({ clientX, clientY }) => {
+canvas.addEventListener("mousedown", (event) => {
     isPainting = true;
+    const { x, y } = getMousePos(event);
 
     if (ferramentaAtiva == "brush") {
-        desenhar(clientX, clientY);
+        desenhar(x, y);
     }
 
     if (ferramentaAtiva == "rubber") {
-        apagar(clientX, clientY);
+        apagar(x, y);
     }
 });
 
-canvas.addEventListener("mousemove", ({ clientX, clientY }) => {
+canvas.addEventListener("mousemove", (event) => {
     if (isPainting) {
+        const { x, y } = getMousePos(event);
+
         if (ferramentaAtiva == "brush") {
-            desenhar(clientX, clientY);
+            desenhar(x, y);
         }
 
         if (ferramentaAtiva == "rubber") {
-            apagar(clientX, clientY);
+            apagar(x, y);
         }
     }
 });
+
 
 canvas.addEventListener("mouseup", () => {
     isPainting = false;
 });
 
-const desenhar = (x, y) => {
-    ctx.globalCompositeOperation = "source-over";
-    ctx.beginPath();
-    ctx.arc(
-        x - canvas.offsetLeft,
-        y - canvas.offsetTop,
-        tamanhoPincel / 4,
-        0,
-        4 * Math.PI
-    );
-    ctx.fill();
-};
+
 
 const apagar = (x, y) => {
     ctx.globalCompositeOperation = "destination-out";
@@ -101,3 +104,10 @@ botoesTamanho.forEach((botao) => {
 botaoLimpar.addEventListener("click", () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
+
+const desenhar = (x, y) => {
+    ctx.globalCompositeOperation = "source-over";
+    ctx.beginPath();
+    ctx.arc(x, y, tamanhoPincel / 2, 0, 2 * Math.PI);
+    ctx.fill();
+};
