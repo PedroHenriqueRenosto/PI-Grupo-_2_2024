@@ -1,3 +1,9 @@
+function toggleContent(index) {
+    const content = document.getElementById(`content-${index}`);
+
+    content.classList.toggle('expanded');
+}
+
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
