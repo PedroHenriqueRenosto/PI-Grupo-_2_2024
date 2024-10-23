@@ -174,9 +174,10 @@ canvas {
 
 
 footer {
-    background-color: #f1f1f1;
+    background-color: #000000;
     padding: 20px;
     text-align: center;
+    color: white;
 }
 
 .footer-container {
@@ -196,7 +197,7 @@ footer {
 
 .footer-links a {
     text-decoration: none;
-    color: #333;
+    color: rgb(186, 101, 255);
 }
 
 .footer-links a:hover {
@@ -209,7 +210,7 @@ footer {
 
 .social-media a {
     text-decoration: none;
-    color: #333;
+    color: rgb(186, 101, 255);
 }
 
 .social-media a:hover {
