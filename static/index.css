@@ -76,6 +76,18 @@ nav h1 {
     color: #DE39F8;
     font-family: urban_heroes;
     text-shadow: #000 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#span_2 {
+    color: #DE39F8;
+    font-family: urban_heroes;
+    text-shadow: #000 ;
+    display: flex;
+    border: solid 3px ;
     
 }
 
