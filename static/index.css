@@ -150,6 +150,67 @@ nav h1 {
     max-height: 500px; 
 }
 
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .card_expansivel {
+    background-image: url(/PI2/PI-Grupo-_2_2024/media/Leonardo_Phoenix_Create_an_image_of_a_background_devoid_of_tex_3\ 5.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .card_expansivel2 {
+    background-image: url(/PI2/PI-Grupo-_2_2024/media/Leonardo_Phoenix_Create_an_image_with_a_rich_dark_purple_backg_2\ 4.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .card-content2 {
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card_expansivel:hover, .card_expansivel2:hover {
+    width: 400px;
+  }
+  
+  .card_expansivel:hover .card-content, .card_expansivel2:hover .card-content2 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .card_expansivel p, .card_expansivel2 p {
+    font-size: 1em;
+    color: #ffffff;
+  }
+
 .toggle-button {
     background: none;
     border: none;
