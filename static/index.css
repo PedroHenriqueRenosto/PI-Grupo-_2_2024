@@ -70,6 +70,7 @@ nav h1 {
     grid-row: 1/2;
     font-size: 60px;
     margin: 10%;
+    
 }
 
 #span_1 {
@@ -79,26 +80,28 @@ nav h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    -webkit-text-stroke: 2px black; 
+    font-weight: 600;
 }
 
-#span_2 {
+/* #span_2 {
     color: #DE39F8;
     font-family: urban_heroes;
     text-shadow: #000 ;
     display: flex;
     border: solid 3px ;
     
-}
+} */
 
 .container1 {
     text-align: center;
 }
 
-h1 {
+#h1 {
     color: #ffffff;
     margin-bottom: 20px;
     font-size: 2em;
+    margin: 50px;
 }
 
 .cards-container1 {
