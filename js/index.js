@@ -4,6 +4,9 @@ function toggleContent(index) {
     content.classList.toggle('expanded');
 }
 
+// 
+
+
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -69,14 +72,9 @@ canvas.addEventListener("mouseup", () => {
 const apagar = (x, y) => {
     ctx.globalCompositeOperation = "destination-out";
     ctx.beginPath();
-    ctx.arc(
-        x - canvas.offsetLeft,
-        y - canvas.offsetTop,
-        tamanhoPincel / 2,
-        0,
-        2 * Math.PI
-    );
+    ctx.arc(x, y, tamanhoPincel / 2, 0, 2 * Math.PI); 
     ctx.fill();
+    ctx.globalCompositeOperation = "source-over"; 
 };
 
 const selecionarFerramenta = ({ target }) => {
