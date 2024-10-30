@@ -1,6 +1,6 @@
 @font-face {
     font-family: urban_heroes;
-    src: url(../fonts/Urban\ Heroes.ttf);
+    src: url(../fonts/Urban\Heroes.ttf);
 }
 
 
@@ -13,7 +13,8 @@ body {
     background-image: url(../media/fundo.png);
     background-size: cover;
     background-repeat: no-repeat;
-    
+    color: white;
+    text-align: center;
 }
 
 
