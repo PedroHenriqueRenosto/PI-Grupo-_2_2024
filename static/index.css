@@ -25,7 +25,8 @@ header {
     height: 150px;
     display: flex;
     justify-content: space-around;
-    align-items: center;        
+    align-items: center;
+    font-size: 18px      
 
 }
 
@@ -37,14 +38,14 @@ header img {
 
 
 
-header h1:not(:last-child)::before{
+header h1::before{
     content: "|";
     margin: 0px 20px 0px 20px;
     font-family: "Port Lligat Slab", serif;
     color: white;
 }
 
-header h1:not(:last-child)::after{
+header h1::after{
     content: "|";
     margin: 0px 20px 0px 20px;
     font-family: "Port Lligat Slab", serif;
