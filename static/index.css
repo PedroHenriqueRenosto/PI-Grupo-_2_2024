@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
+
 @font-face {
     font-family: urban_heroes;
     src: url(../fonts/urban_heroes/Urban\ Heroes.ttf);
@@ -13,7 +15,7 @@ body {
     background-image: url(../media/fundo.png);
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: #D4C0D3;
     text-align: center;
     
 }
@@ -106,7 +108,14 @@ border: solid 3px ;
 
 }
 
+#div2 h2 {
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+}
+
 .escrita1 {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,6 +142,7 @@ border: solid 3px ;
 }
 
 .escrita2 {
+    font-family: "Arapey", serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,13 +226,15 @@ border: solid 3px ;
     max-width: 1200px;
   }
 
-  .text-paint {
+  .texto-paint {
     color: rgb(255, 255, 255);
     padding: 20px 350px;
     text-align: center;
     font-size: 1em;
     font-weight: 10;
     margin-bottom: 10px;
+    font-family: "Arapey", serif;
+    color: #D4C0D3;
 }
 
 
@@ -239,7 +251,7 @@ border: solid 3px ;
     justify-content: center;
     align-items: center;
   }
-  
+    
   .card_expansivel2 {
     background-image: url(../media/tiago_foto2.jpg);
     background-size: cover;
@@ -323,11 +335,13 @@ border: solid 3px ;
 
 #h1-Paint {
     color: #F59AEE;
+ 
     margin-right: 48%;
     font-size: 60px;
     font-family: urban_heroes; 
     -webkit-text-stroke: 2px black; 
 }
+
 
 canvas {
     background-color: rgb(255, 255, 255);
@@ -427,7 +441,7 @@ footer {
     padding: 20px;
     text-align: center;
     color: white;
-    margin: 50px;
+    margin-top: 30px;
 }
 
 .footer-container {
