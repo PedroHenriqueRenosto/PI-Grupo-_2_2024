@@ -206,10 +206,7 @@ border: solid 3px ;
 .card-container {
     margin: 50px;
     margin-left: 14%;
-    display: flex;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
     width: 80%;
     max-width: 1200px;
 
