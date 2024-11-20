@@ -203,15 +203,29 @@ border: solid 3px ;
     max-height: 500px; 
 }
 
+
+
 .card-container {
-    margin: 50px;
-    margin-left: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
     gap: 20px;
     width: 80%;
     max-width: 1200px;
-
   }
-  
+
+  .text-paint {
+    color: rgb(255, 255, 255);
+    padding: 20px 350px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 10;
+    margin-bottom: 10px;
+}
+
+
   .card_expansivel {
     background-image: url(../media/tiago_foto1.jpg);
     background-size: cover;
@@ -222,7 +236,8 @@ border: solid 3px ;
     overflow: hidden;
     cursor: pointer;
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
   }
   
   .card_expansivel2 {
@@ -235,18 +250,41 @@ border: solid 3px ;
     overflow: hidden;
     cursor: pointer;
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
   }
   
-  .card-content2 {
+  .card-content {
     padding: 20px;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
+
+  .card_expansivel:hover .card-content, 
+.card_expansivel2:hover .card-content {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.card-content p {
+    margin: 0; /* Remove espaços indesejados */
+    padding: 0;
+    color: #ffffff; /* Garante visibilidade */
+    opacity: 0; /* Invisível por padrão */
+    transform: translateY(30px); /* Desloca para baixo por padrão */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card_expansivel:hover .card-content p, 
+.card_expansivel2:hover .card-content p {
+    opacity: 1; /* Torna os parágrafos visíveis no hover */
+    transform: translateY(0); /* Move para a posição correta */
+}
+
   
   .card_expansivel:hover, .card_expansivel2:hover {
-    width: 1300px;
+    width: 100%;
   }
   
   .card_expansivel:hover .card-content, .card_expansivel2:hover .card-content2 {
