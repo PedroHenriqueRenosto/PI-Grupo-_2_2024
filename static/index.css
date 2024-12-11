@@ -81,13 +81,18 @@ nav h1 {
 #span_1 {
     color: #DE39F8;
     font-family: urban_heroes;
-    text-shadow: #000 ;
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-text-stroke: 2px black; 
-    font-weight: 600;
+    text-shadow: 
+    -3px -3px 0 #000,  
+    3px -3px 0 #000,  
+    -3px 3px 0 #000,  
+    3px 3px 0 #000;   
+    display: inline-block;
+
 }
+
 
 /* #span_2 {
 color: #DE39F8;
@@ -171,6 +176,7 @@ border: solid 3px ;
 }
 
 .cards-container1 {
+    height: 100%;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -179,12 +185,12 @@ border: solid 3px ;
 }
 
 .card {
+    height: 70%;
     background-color: #6c567b;
     border-radius: 10px;
     width: 300px;
     padding: 20px;
     color: #eee;
-    position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -205,15 +211,14 @@ border: solid 3px ;
     height: auto;
 }
 
-.card-content {
-    max-height: 0;
+.vasco {
+    max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.5s ease;
     margin-bottom: 20px;
 }
 
-.card-content.expanded {
-    max-height: 500px; 
+.expanded {
+    max-height: 500px;
 }
 
 
@@ -229,7 +234,7 @@ border: solid 3px ;
     max-width: 1200px;
   }
 
-  .texto-paint {
+  .texto_paint {
     color: rgb(255, 255, 255);
     padding: 20px 350px;
     text-align: center;
@@ -282,14 +287,6 @@ border: solid 3px ;
     transform: translateY(0); 
 }
 
-.card-content p {
-    margin: 0; /* Remove espaços indesejados */
-    padding: 0;
-    color: #ffffff; /* Garante visibilidade */
-    opacity: 0; /* Invisível por padrão */
-    transform: translateY(30px); /* Desloca para baixo por padrão */
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
 
 .card_expansivel:hover .card-content p, 
 .card_expansivel2:hover .card-content p {
@@ -336,12 +333,17 @@ border: solid 3px ;
     color: #ddd;
 } 
 
-#h1-Paint {
+#h1_Paint {
     color: #F59AEE;
     margin-right: 48%;
     font-size: 60px;
     font-family: urban_heroes; 
-    -webkit-text-stroke: 2px black; 
+    text-shadow: 
+    -8px -8px 0 #000,  
+    8px -8px 0 #000,  
+    -8px 8px 0 #000,  
+    8px 8px 0 #000;   
+    display: inline-block;
 }
 
 

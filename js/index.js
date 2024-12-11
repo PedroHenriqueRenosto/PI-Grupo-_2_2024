@@ -1,6 +1,6 @@
-function toggleContent(index) {
-    const content = document.getElementById(`content-${index}`);
-
+function toggleContent(id) {
+    const content = document.getElementById(`vai-${id}`);
+    console.log(content)
     content.classList.toggle('expanded');
 }
 
