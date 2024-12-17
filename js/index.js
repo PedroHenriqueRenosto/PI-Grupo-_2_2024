@@ -72,9 +72,9 @@ canvas.addEventListener("mouseup", () => {
 const apagar = (x, y) => {
     ctx.globalCompositeOperation = "destination-out";
     ctx.beginPath();
-    ctx.arc(x, y, tamanhoPincel / 2, 0, 2 * Math.PI); 
+    ctx.arc(x, y, tamanhoPincel / 2, 0, 2 * Math.PI);
     ctx.fill();
-    ctx.globalCompositeOperation = "source-over"; 
+    ctx.globalCompositeOperation = "source-over";
 };
 
 const selecionarFerramenta = ({ target }) => {
