@@ -5,6 +5,10 @@
     src: url(../fonts/urban_heroes/Urban\ Heroes.ttf);
 }
 
+htmml {
+    scroll-behavior: smooth;
+}
+
 
 * {
     margin: 0;
@@ -40,18 +44,24 @@ header img {
 
 
 
-header h1::before{
+header a::before{
     content: "|";
     margin: 0px 20px 0px 20px;
     font-family: "Port Lligat Slab", serif;
     color: white;
 }
 
-header h1::after{
+header a::after{
     content: "|";
     margin: 0px 20px 0px 20px;
     font-family: "Port Lligat Slab", serif;
     color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: #F59AEE;
+   
 }
 
 nav {
