@@ -1,13 +1,13 @@
 function toggleContent(id) {
     const content = document.getElementById(`vai-${id}`);
     console.log(content)
-    content.classList.toggle('expanded');
+    content.classList.toggle('expandido');
 }
 
 // 
 
 
-let mybutton = document.getElementById("myBtn");
+let mybutton = document.getElementById("seta");
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

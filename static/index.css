@@ -66,7 +66,7 @@ header a {
 
 /* botao para voltar pra cima */
 
-#myBtn {
+#seta {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -82,7 +82,7 @@ header a {
     border-radius: 4px;
   }
   
-  #myBtn:hover {
+  #seta:hover {
     background-color: #525252;
   }
 
@@ -113,7 +113,7 @@ nav h1 {
     
 }
 
-#span_1 {
+#arte {
     color: #DE39F8;
     font-family: urban_heroes;
     display: flex;
@@ -138,7 +138,7 @@ border: solid 3px ;
 
 } */
 
-#div2 {
+#esquerda {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -148,7 +148,7 @@ border: solid 3px ;
 
 }
 
-#div2 h2 {
+#esquerda h2 {
     font-size: 30px;
     padding: 10px;
     color: white;
@@ -164,14 +164,10 @@ border: solid 3px ;
     margin-left: 12%;
 }
 
-.imagem2 {
-    display: flex;
-    height: 300px;
-}
 
 
 
-#div2 {
+#direita {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -182,7 +178,6 @@ border: solid 3px ;
 }
 
 .escrita2 {
-    font-family: "Arapey", serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,18 +194,18 @@ border: solid 3px ;
     max-width: 400px;
 }
 
-.container1 {
+.evolucao-da-arte {
     text-align: center;
 }
 
-#h1 {
+#titulo-evolucao-da-arte {
     color: #ffffff;
     margin-bottom: 20px;
     font-size: 2em;
     margin: 50px;
 }
 
-.cards-container1 {
+.cards-evolucao_da_arte {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -219,7 +214,7 @@ border: solid 3px ;
     margin: 45px;
 }
 
-.card {
+.todo-card {
     height: 70%;
     background-color: #6c567b;
     border-radius: 10px;
@@ -233,34 +228,34 @@ border: solid 3px ;
     justify-content: space-between;
 }
 
-.card-header {
+.card-imagem {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.card-header img {
+.card-imagem img {
     border-radius: 10px;
     width: 100%;
     height: auto;
 }
 
-.vasco {
+.expansao {
     max-height: 0px;
     overflow: hidden;
     margin-bottom: 20px;
     transition: 0.9 ease;
 }
 
-.expanded {
+.expandido {
     max-height: 500px;
     
 }
 
 
 
-.card-container {
+.ferramentas {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,8 +278,8 @@ border: solid 3px ;
 }
 
 
-  .card_expansivel {
-    background-image: url(../media/tiago_foto1.jpg);
+  .ferramentas-card {
+    background-image: url(../media/e474069b-d2d7-479f-9978-1d3572ce5a29.jpg);
     background-size: cover;
     border-radius: 10px;
     width: 500px;
@@ -297,56 +292,41 @@ border: solid 3px ;
     align-items: center;
   }
     
-  .card_expansivel2 {
-    background-image: url(../media/tiago_foto2.jpg);
-    background-size: cover;
-    border-radius: 10px;
-    width: 500px;
-    height: 300px;
-    transition: width 0.3s ease;
-    overflow: hidden;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   
-  .card-content {
+  .ferramentas-expansiveis {
     padding: 20px;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
-  .card_expansivel:hover .card-content, 
-.card_expansivel2:hover .card-content {
+  .ferramentas-card:hover .ferramentas-expansiveis {
     opacity: 1; 
     transform: translateY(0); 
 }
 
 
-.card_expansivel:hover .card-content p, 
-.card_expansivel2:hover .card-content p {
+.ferramentas-card:hover .ferramentas-expansiveis p {
     opacity: 1; /* Torna os parágrafos visíveis no hover */
     transform: translateY(0); /* Move para a posição correta */
 }
 
   
-  .card_expansivel:hover, .card_expansivel2:hover {
+  .ferramentas-card:hover {
     width: 100%;
   }
   
-  .card_expansivel:hover .card-content, .card_expansivel2:hover .card-content2 {
+  .ferramentas-card:hover .ferramentas-expansiveis {
     opacity: 1;
     transform: translateY(0);
   }
   
-  .title {
+  .titulo-ferramentas {
     font-size: 1.2em;
     margin-bottom: 10px;
   }
   
-  .card_expansivel p, .card_expansivel2 p {
+  .ferramentas-card p {
     font-size: 1em;
     color: #ffffff;
   }
