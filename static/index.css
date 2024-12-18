@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
 
 @font-face {
     font-family: urban_heroes;
@@ -215,10 +215,12 @@ border: solid 3px ;
     max-height: 0px;
     overflow: hidden;
     margin-bottom: 20px;
+    transition: 0.9 ease;
 }
 
 .expanded {
     max-height: 500px;
+    
 }
 
 
