@@ -64,7 +64,7 @@ header a {
    
 }
 
-button {
+.botao_menu {
     background: none;
     border: none;
     color: #F59AEE;
@@ -74,7 +74,7 @@ button {
     font-family: "Play", serif;;
 }
 
-button:hover {
+.botao_menu:hover {
     color:#F59AEE;
 }
 
@@ -175,6 +175,7 @@ border: solid 3px ;
 #texto-revolucao .texto {
     flex: 1;
     margin-bottom: 20px; /* Espaço entre o texto e o fim do site */
+    
 }
 
 #texto-revolucao .imagem {
