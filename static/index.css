@@ -469,48 +469,50 @@ canvas {
     background-color: #ffffff;
 }
 
+.footer {
+    background-color: black;
+    padding: 20px 0;
+    margin-top: 100px;
+}
 
-footer {
-    background-color: #000000;
-    padding: 20px;
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.left,
+.center,
+.right {
+    flex: 1;
+    padding: 10px;
+}
+
+.left {
+    text-align: left;
+    margin-left: 60px;
+}
+
+.left h2 {
+    font-size: 15px;
+}
+
+.left p {
+    font-size: 10px;
+}
+
+
+.center {
     text-align: center;
-    color: white;
-    margin-top: 30px;
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
+.right {
+    text-align: right;
+    margin-right: 60px; 
 }
 
-.footer-links {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.footer-links a {
-    text-decoration: none;
-    color: rgb(186, 101, 255);
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.social-media {
-    margin-top: 10px;
-}
-
-.social-media a {
-    text-decoration: none;
-    color: rgb(186, 101, 255);
-}
-
-.social-media a:hover {
-    text-decoration: underline;
-}
+.right img {
+    width: 60px;
+    
+}  
