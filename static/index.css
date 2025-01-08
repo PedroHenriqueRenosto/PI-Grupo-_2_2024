@@ -210,7 +210,7 @@ nav h1 {
     }
 
     #texto-revolucao .imagem img {
-        width: 200px; /* Ajusta o tamanho da imagem em telas menores */
+        width: 200px; 
         height: 200px;
     }
 }
@@ -282,7 +282,7 @@ nav h1 {
 
 .expandido {
     max-height: 500px;
-    min-height: 300px;
+    min-height: 260px;
     
 }
 
@@ -344,8 +344,8 @@ nav h1 {
 
 
 .ferramentas-card:hover .ferramentas-expansiveis p {
-    opacity: 1; /* Torna os parágrafos visíveis no hover */
-    transform: translateY(0); /* Move para a posição correta */
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
   
