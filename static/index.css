@@ -5,6 +5,9 @@
     src: url(../fonts/urban_heroes/Urban\ Heroes.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
 htmml {
     scroll-behavior: smooth;
 }
@@ -22,6 +25,18 @@ body {
     color: #ffffff;
     text-align: center;
     
+}
+
+h1 {
+    font-family: "EB Garamond", serif;
+}
+
+p {
+    font-family: "Arapey", serif;
+}
+
+h2 {
+    font-family: "Arapey", serif;
 }
 
 
@@ -124,6 +139,7 @@ nav h1 {
     grid-row: 1/2;
     font-size: 60px;
     margin: 10%;
+    font-family: "Arapey", serif;
     
 }
 
@@ -150,17 +166,10 @@ nav h1 {
 }
 
 
-/* #span_2 {
-color: #DE39F8;
-font-family: urban_heroes;
-text-shadow: #000 ;
-display: flex;
-border: solid 3px ;
 
-} */
 
 #texto-revolucao {
-    margin:220px 0; /* Espaçamento entre esta seção e outras partes do site */
+    margin:220px 0; 
     margin-top: 0px;
 }
 
@@ -176,7 +185,7 @@ border: solid 3px ;
 
 #texto-revolucao .texto {
     flex: 1;
-    margin-bottom: 20px; /* Espaço entre o texto e o fim do site */
+    margin-bottom: 20px; 
     
 }
 
@@ -185,13 +194,13 @@ border: solid 3px ;
 }
 
 #texto-revolucao .imagem img {
-    width: 500px; /* Largura fixa */
-    height: 300px; /* Altura fixa */
-    object-fit: cover; /* Garante que a imagem seja cortada sem distorção */
-    border-radius: 5px; /* Bordas arredondadas */
+    width: 500px; 
+    height: 300px;
+    object-fit: cover; 
+    border-radius: 5px; 
     display: block;
-    margin: 0 auto; /* Centraliza a imagem no container */
-    border: white solid 5px;
+    margin: 0 auto; 
+    border: rgb(63, 1, 82) solid 5px;
 }
 
 @media (max-width: 768px) {
@@ -219,6 +228,14 @@ border: solid 3px ;
     margin: 50px;
 }
 
+#fonte_RDCA {
+    margin: 20px;
+}
+
+#expancao {
+    margin: 20px;
+}
+
 .cards-evolucao_da_arte {
     height: 100%;
     display: flex;
@@ -240,6 +257,7 @@ border: solid 3px ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: rgb(134, 0, 175) solid 5px;
 }
 
 .card-imagem {
@@ -264,6 +282,7 @@ border: solid 3px ;
 
 .expandido {
     max-height: 500px;
+    min-height: 300px;
     
 }
 
@@ -307,6 +326,7 @@ border: solid 3px ;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: rgb(23, 0, 31) solid 5px;
   }
     
   
