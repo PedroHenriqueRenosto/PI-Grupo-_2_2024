@@ -431,7 +431,7 @@ canvas {
     padding: 8px 10px;
     background-image: url(../media/icons8-modo-de-cor.gif);
     background-position: 1px;
-    background-position-x: -1px;
+        background-position-x: -1px;
 }
 
 .input__cor::-webkit-color-swatch {
