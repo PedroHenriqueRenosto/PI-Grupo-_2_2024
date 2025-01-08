@@ -179,3 +179,4 @@ botoesTamanho.forEach((botao) => {
     botao.addEventListener("click", selecionarTamanho);
 });
 
+
