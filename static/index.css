@@ -138,61 +138,50 @@ border: solid 3px ;
 
 } */
 
-#esquerda {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: stretch;
-    margin-right: 10%;
-    margin-top: 8%;
-
+#texto-revolucao {
+    margin:220px 0; /* Espaçamento entre esta seção e outras partes do site */
 }
 
-#esquerda h2 {
-    font-size: 30px;
-    padding: 10px;
-    color: white;
-}
-
-.escrita1 {
-    color: #D4C0D3;
+#texto-revolucao .linha {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-right: 10%;
-    margin-left: 12%;
+    gap:20px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right:150px;
+}
+
+#texto-revolucao .texto {
+    flex: 1;
+    margin-bottom: 20px; /* Espaço entre o texto e o fim do site */
+}
+
+#texto-revolucao .imagem {
+    flex: 1;
+}
+
+#texto-revolucao .imagem img {
+    width: 600px; /* Largura fixa */
+    height: 400px; /* Altura fixa */
+    object-fit: cover; /* Garante que a imagem seja cortada sem distorção */
+    border-radius: 5px; /* Bordas arredondadas */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem no container */
+}
+
+@media (max-width: 768px) {
+    #texto-revolucao .linha {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #texto-revolucao .imagem img {
+        width: 200px; /* Ajusta o tamanho da imagem em telas menores */
+        height: 200px;
+    }
 }
 
 
-
-
-#direita {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: stretch;
-    margin-left: 10%;
-    margin-top: 8%;
-
-}
-
-.escrita2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 12%;
-    margin-right: 10%;
-    color: #D4C0D3;
- 
-}
-
-.imagem2 {
-    display: flex;
-    height: 350px;
-    max-width: 400px;
-}
 
 .evolucao-da-arte {
     text-align: center;
@@ -279,7 +268,7 @@ border: solid 3px ;
 
 
   .ferramentas-card {
-    background-image: url(../media/e474069b-d2d7-479f-9978-1d3572ce5a29.jpg);
+    background-image: url(../media/fundocard.jpg);
     background-size: cover;
     border-radius: 10px;
     width: 500px;
@@ -417,8 +406,10 @@ canvas {
     border: none;
     background: none;
     cursor: pointer;
-    padding: 5px 7px;
-    background-image: url(../media/icons8-círculo-rgb-2-48.png)
+    padding: 8px 10px;
+    background-image: url(../media/icons8-modo-de-cor.gif);
+    background-position: 1px;
+    background-position-x: -1px;
 }
 
 .input__cor::-webkit-color-swatch {
