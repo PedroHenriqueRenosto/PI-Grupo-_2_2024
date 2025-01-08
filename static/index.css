@@ -161,6 +161,7 @@ border: solid 3px ;
 
 #texto-revolucao {
     margin:220px 0; /* Espaçamento entre esta seção e outras partes do site */
+    margin-top: 0px;
 }
 
 #texto-revolucao .linha {
@@ -170,6 +171,7 @@ border: solid 3px ;
     margin-bottom: 20px;
     margin-left: 150px;
     margin-right:150px;
+    margin-top: 100px;
 }
 
 #texto-revolucao .texto {
@@ -183,12 +185,13 @@ border: solid 3px ;
 }
 
 #texto-revolucao .imagem img {
-    width: 600px; /* Largura fixa */
-    height: 400px; /* Altura fixa */
+    width: 500px; /* Largura fixa */
+    height: 300px; /* Altura fixa */
     object-fit: cover; /* Garante que a imagem seja cortada sem distorção */
     border-radius: 5px; /* Bordas arredondadas */
     display: block;
     margin: 0 auto; /* Centraliza a imagem no container */
+    border: white solid 5px;
 }
 
 @media (max-width: 768px) {
@@ -264,6 +267,9 @@ border: solid 3px ;
     
 }
 
+#ferramentas_titulo {
+    margin-top: 300px;
+}
 
 
 .ferramentas {
@@ -293,8 +299,8 @@ border: solid 3px ;
     background-image: url(../media/fundocard.jpg);
     background-size: cover;
     border-radius: 10px;
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    height: 400px;
     transition: width 0.3s ease;
     overflow: hidden;
     cursor: pointer;
@@ -362,16 +368,17 @@ border: solid 3px ;
 } 
 
 #h1_Paint {
-    color: #F59AEE;
-    margin-right: 48%;
+    color: #000000;
     font-size: 60px;
     font-family: urban_heroes; 
     text-shadow: 
-    -8px -8px 0 #000,  
-    8px -8px 0 #000,  
-    -8px 8px 0 #000,  
-    8px 8px 0 #000;   
-    display: inline-block;
+    -4px -4px 0 #640046,  
+    4px -4px 0 #bd00bd,  
+    -4px 4px 0 #800091,  
+    4px 4px 0 #ff00ff;   
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
 }
 
 
