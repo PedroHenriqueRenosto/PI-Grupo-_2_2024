@@ -64,6 +64,20 @@ header a {
    
 }
 
+button {
+    background: none;
+    border: none;
+    color: #F59AEE;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: "Play", serif;;
+}
+
+button:hover {
+    color:#F59AEE;
+}
+
 /* botao para voltar pra cima */
 
 #seta {

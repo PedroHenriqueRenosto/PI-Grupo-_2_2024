@@ -1,3 +1,10 @@
+function scrollToSection(id) {
+    const section = document.querySelector(id);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
 function toggleContent(id) {
     const content = document.getElementById(`vai-${id}`);
     console.log(content)
