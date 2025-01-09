@@ -101,7 +101,7 @@ header a {
     color:#F59AEE;
 }
 
-/* botao para voltar pra cima */
+
 
 #seta {
     display: none;
@@ -301,8 +301,8 @@ nav h1 {
 }
 
 .expandido {
-    max-height: 500px;
-    min-height: 260px;
+    max-height: 320px;
+    min-height: 320px;
     
 }
 
