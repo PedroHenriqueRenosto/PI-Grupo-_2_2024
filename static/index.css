@@ -322,6 +322,10 @@ nav h1 {
     max-width: 1200px;
   }
 
+  .ferramentas p {
+    font-family: "EB Garamond", serif;
+  }
+
   .texto_paint {
     color: rgb(255, 255, 255);
     padding: 20px 350px;
@@ -337,8 +341,8 @@ nav h1 {
     background-image: url(../media/fundocard.jpg);
     background-size: cover;
     border-radius: 10px;
-    width: 800px;
-    height: 400px;
+    width: 900px;
+    height: 450px;
     transition: width 0.3s ease;
     overflow: hidden;
     cursor: pointer;
@@ -566,9 +570,20 @@ canvas {
   
   .footer-logo-ifc {
     width: 200px;
+    margin: 20px;
   }
   
   .logo_site {
     width: 100px;
+    margin: 20px;
   }
+
+#alinhar_texto_footer {
+    margin-left: 15%;
+}
+
+#email_footer {
+    display: flex;
+    justify-content:  center;
+}
   
