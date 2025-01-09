@@ -1,4 +1,8 @@
  @import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Passion+One:wght@400;700;900&family=Play&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Koulen&family=Passion+One:wght@400;700;900&family=Play&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Koulen&family=Lalezar&family=Passion+One:wght@400;700;900&family=Play&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Francois+One&family=Koulen&family=Lalezar&family=Passion+One:wght@400;700;900&family=Play&display=swap');
 
 @font-face {
     font-family: urban_heroes;
@@ -28,15 +32,18 @@ body {
 }
 
 h1 {
-    font-family: "EB Garamond", serif;
+    font-family: "Lalezar", serif;
 }
 
 p {
-    font-family: "Arapey", serif;
+    font-family: "Francois One", serif;
+    font-size: 1,5em;
+    text-align: justify;
 }
 
 h2 {
-    font-family: "Arapey", serif;
+    font-family: "Lalezar", serif;
+
 }
 
 
@@ -45,6 +52,7 @@ header {
     color: #F59AEE;
     height: 150px;
     display: flex;
+    font-family: "Play", serif;
     justify-content: space-around;
     align-items: center;
     font-size: 18px      
@@ -139,7 +147,6 @@ nav h1 {
     grid-row: 1/2;
     font-size: 60px;
     margin: 10%;
-    font-family: "Arapey", serif;
     
 }
 
@@ -157,8 +164,19 @@ nav h1 {
     display: inline-block;
 
 }
+#texto_hero {
+    color: #ffffff;
+    font-family: "Contrail One", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 
+    -3px -3px 0 #ffffff, 
+
+}
 
 #titulo-geral {
+    font-family: "Lalezar", serif;
     color: white;
     font-size: 40px;
     text-align: center;
@@ -174,6 +192,7 @@ nav h1 {
 }
 
 #texto-revolucao .linha {
+    font-family: "Lalezar", serif;
     display: flex;
     align-items: center;
     gap:20px;
@@ -309,7 +328,6 @@ nav h1 {
     font-size: 1em;
     font-weight: 10;
     margin-bottom: 10px;
-    font-family: "Arapey", serif;
     color: #D4C0D3;
 }
 
@@ -327,6 +345,7 @@ nav h1 {
     justify-content: center;
     align-items: center;
     border: rgb(23, 0, 31) solid 5px;
+    font-family: "Lalezar", serif;
   }
     
   
