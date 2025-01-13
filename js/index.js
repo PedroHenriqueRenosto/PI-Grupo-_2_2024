@@ -177,7 +177,7 @@ botaoSalvar.addEventListener("click", () => {
 
     const link = document.createElement("a");
     link.href = dataURL;
-    link.download = "obra-de-arte-mais-foda-do-mundo.jpeg"; 
+    link.download = "Arte_paint.jpeg"; 
     link.click();
 });
 
