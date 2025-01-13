@@ -163,12 +163,24 @@ botaoLimpar.addEventListener("click", () => {
 
 
 botaoSalvar.addEventListener("click", () => {
-    const dataURL = canvas.toDataURL("image/png");
+    const canvasTemp = document.createElement("canvas");
+    const ctxTemp = canvasTemp.getContext("2d");
+    canvasTemp.width = canvas.width;
+    canvasTemp.height = canvas.height;
+    ctxTemp.fillStyle = "white";
+    ctxTemp.fillRect(0, 0, canvasTemp.width, canvasTemp.height);
+    ctxTemp.drawImage(canvas, 0, 0);
+
+    const formato = "image/jpeg";
+    const qualidade = 0.9; 
+    const dataURL = canvasTemp.toDataURL(formato, qualidade);
+
     const link = document.createElement("a");
     link.href = dataURL;
-    link.download = "obra-de-arte-mais-foda-do-mundo.png";
+    link.download = "obra-de-arte-mais-foda-do-mundo.jpeg"; 
     link.click();
 });
+
 
 
 ferramentas.forEach((ferramenta) => {
