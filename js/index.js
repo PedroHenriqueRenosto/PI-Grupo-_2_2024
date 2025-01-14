@@ -15,17 +15,30 @@ function toggleContent(id) {
 
 
 let mybutton = document.getElementById("seta");
-window.onscroll = function() {scrollFunction()};
+
+// Exibe o botão ao rolar para baixo
+window.onscroll = function() {
+    scrollFunction();
+};
+
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
 }
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+    const scrollDuration = 500; 
+    const scrollStep = -window.scrollY / (scrollDuration / 15); 
+
+    const scrollInterval = setInterval(function () {
+        if (window.scrollY !== 0) {
+            window.scrollBy(0, scrollStep); 
+        } else {
+            clearInterval(scrollInterval); 
+        }
+    }, 15);
 }
 
 
