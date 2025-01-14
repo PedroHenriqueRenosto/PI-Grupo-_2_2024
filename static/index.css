@@ -297,13 +297,13 @@ nav h1 {
     max-height: 0px;
     overflow: hidden;
     margin-bottom: 20px;
-    transition: 0.9 ease;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    padding: 0; 
 }
 
 .expandido {
-    max-height: 320px;
-    min-height: 320px;
-    
+    max-height: 320px; 
+    padding: 10px; 
 }
 
 #ferramentas_titulo {
