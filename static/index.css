@@ -39,6 +39,7 @@ p {
     font-family: "Francois One", serif;
     font-size: 1,5em;
     text-align: justify;
+
 }
 
 h2 {
@@ -301,6 +302,11 @@ nav h1 {
     padding: 0; 
 }
 
+.expansao p{
+    text-align: center;
+}
+
+
 .expandido {
     max-height: 320px; 
     padding: 10px; 
@@ -326,15 +332,7 @@ nav h1 {
     font-family: "EB Garamond", serif;
   }
 
-  .texto_paint {
-    color: rgb(255, 255, 255);
-    padding: 20px 350px;
-    text-align: center;
-    font-size: 1em;
-    font-weight: 10;
-    margin-bottom: 10px;
-    color: #D4C0D3;
-}
+  
 
 
   .ferramentas-card {
@@ -390,6 +388,7 @@ nav h1 {
   .ferramentas-card p {
     font-size: 1em;
     color: #ffffff;
+    text-align: center;
   }
 
 .toggle-button {
@@ -411,18 +410,45 @@ nav h1 {
     color: #ddd;
 } 
 
-#h1_Paint {
-    color: #000000;
-    font-size: 60px;
-    font-family: urban_heroes; 
-    text-shadow: 
-    -4px -4px 0 #640046,  
-    4px -4px 0 #bd00bd,  
-    -4px 4px 0 #800091,  
-    4px 4px 0 #ff00ff;   
+#Paint {
     display: flex;
     justify-content: center;
+}
+
+#h1_Paint {
+    color: #000000;
+    font-size: 4em;
+    font-family: 'urban_heroes';
+    text-shadow: 
+        -4px -4px 0 #640046,  
+        4px -4px 0 #bd00bd,  
+        -4px 4px 0 #800091,  
+        4px 4px 0 #ff00ff;
+    animation: fadeIn 2s ease-in-out;
     margin-top: 300px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.texto_paint {
+    color: #d4c0d3;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 
