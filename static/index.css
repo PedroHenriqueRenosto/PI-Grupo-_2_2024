@@ -250,7 +250,7 @@ nav h1 {
     color: #ffffff;
     margin-bottom: 20px;
     font-size: 2em;
-    margin-top: 300px;
+    margin-top: 200px;
     
 }
 
@@ -318,7 +318,7 @@ nav h1 {
 }
 
 #ferramentas_titulo {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 
@@ -430,7 +430,7 @@ nav h1 {
         -4px 4px 0 #800091,  
         4px 4px 0 #ff00ff;
     animation: fadeIn 2s ease-in-out;
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 @keyframes fadeIn {
@@ -588,6 +588,11 @@ canvas {
     margin-left:auto;
     letter-spacing: -0.3px;
   }
+
+  #footer_collum {
+    display: flex;
+    flex-direction: column;
+  }
   
   .logo-section {
     text-align: center;
@@ -611,6 +616,8 @@ canvas {
   }
 
 #alinhar_texto_footer {
+    display:flex;
+    flex-direction: column;
     margin-left: 15%;
 }
 
